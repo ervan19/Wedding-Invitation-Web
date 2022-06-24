@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import ReactAudioPlayer from "react-audio-player";
 export default function AudioPlayer() {
   const [play, setPlay] = useState(true);
   return (
