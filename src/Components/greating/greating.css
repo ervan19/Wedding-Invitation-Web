@@ -1,0 +1,30 @@
+.text {
+  margin: 30px auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 20px;
+  background: linear-gradient(45deg, #496053, #759a85);
+  color: white;
+}
+.hope {
+  text-align: center;
+}
+.hope h3 {
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+.hope p {
+  font-style: italic;
+}
+
+@media (min-width: 768px) {
+  .text {
+    width: 40%;
+    padding: 50px 100px;
+    border-radius: 50px;
+  }
+}

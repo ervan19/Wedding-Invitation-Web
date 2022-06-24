@@ -1,0 +1,38 @@
+.galeryContainer {
+  padding: 50px 20px;
+  position: relative;
+}
+
+.photoContainer {
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.photoContainer img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 50px;
+  box-shadow: 0px 12px 20px rgba(73, 96, 83, 0.3);
+}
+.wrapper-photo {
+  position: relative;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: pacifico;
+  cursor: pointer;
+}
+.wrapper-photo h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+@media (min-width: 768px) {
+  .photoContainer {
+    gap: 30px;
+  }
+}

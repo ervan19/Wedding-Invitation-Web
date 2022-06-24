@@ -1,0 +1,70 @@
+.App {
+  width: 100%;
+  max-width: 1280px;
+  overflow: hidden;
+  margin: 0 auto;
+  min-height: 100vh;
+  position: relative;
+}
+.heading {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+
+.card {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 50px;
+  padding: 40px 4px;
+  background: linear-gradient(-45deg, #496053, #759a85);
+  color: white;
+  text-align: center;
+  box-shadow: 0px 12px 20px rgba(73, 96, 83, 0.3);
+}
+.card h4 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 50%;
+  background-color: var(--primary);
+  position: absolute;
+  z-index: -1;
+}
+
+.circle:first-child {
+  top: 100px;
+  left: -80px;
+}
+.circle:nth-child(2) {
+  top: 0;
+  right: -50px;
+}
+.circle:last-child {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+footer {
+  padding: 50px 100px;
+  margin-top: 30px;
+  text-align: center;
+}
+footer span {
+  font-family: pacifico;
+  color: black;
+  font-style: normal;
+}
+footer p {
+  font-style: italic;
+}
