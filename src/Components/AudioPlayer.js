@@ -5,19 +5,19 @@ export default function AudioPlayer() {
   return (
     <div className="audioContainer" onClick={() => setPlay(!play)}>
       {play ? (
-        <ReactAudioPlayer
+        <audio
           src={process.env.PUBLIC_URL + "song.mp3"}
           autoPlay
           loop
-          preLoad="metadata"
+          preload="auto"
           className="audio"
         />
       ) : (
-        <ReactAudioPlayer
+        <audio
           src={process.env.PUBLIC_URL + "song.mp3"}
           muted
           loop
-          preLoad="metadata"
+          preLoad="auto"
           className="audio"
         />
       )}
