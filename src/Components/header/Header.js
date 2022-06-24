@@ -1,3 +1,4 @@
+import React from "react";
 import "./header.css";
 import Heading from "../Heading";
 import Name from "./Name";

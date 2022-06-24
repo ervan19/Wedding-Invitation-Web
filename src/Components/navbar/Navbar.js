@@ -1,3 +1,4 @@
+import React from "react";
 import "./navbar.css";
 import { Link } from "react-scroll";
 export default function Navbar() {
@@ -8,9 +9,10 @@ export default function Navbar() {
         <Link to="Home">Rahmat&Lisna</Link>
       </div>
       <div className="navLinks">
-        {navbar.map(function (e, i) {
+        {navbar.map(function(e, i) {
           return (
             <Link
+              key={i}
               activeClass="active"
               to={e}
               spy={true}

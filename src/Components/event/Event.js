@@ -1,3 +1,4 @@
+import React from "react";
 import Circle from "../Circle";
 import Card from "../Card";
 import Heading from "../Heading";

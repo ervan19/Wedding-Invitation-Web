@@ -41,8 +41,8 @@
   height: 200px;
   border-radius: 50%;
   filter: blur(120px);
-  opacity: 50%;
-  background-color: var(--primary);
+  opacity: 70%;
+  background: linear-gradient(-45deg, #496053, #759a85);
   position: absolute;
   z-index: -1;
 }
@@ -59,6 +59,29 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+.audioContainer {
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 100;
+}
+.audio {
+  display: none;
+}
+.musicPlayer {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(-45deg, #496053, #759a85);
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+audio::-webkit-media-controls-panel {
+  background: linear-gradient(-45deg, #496053, #759a85);
 }
 
 footer {

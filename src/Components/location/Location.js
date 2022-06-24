@@ -1,3 +1,4 @@
+import React from "react";
 import "./location.css";
 import Maps from "./Maps";
 import Heading from "../Heading";

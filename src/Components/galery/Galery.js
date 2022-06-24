@@ -1,3 +1,4 @@
+import React from "react";
 import Circle from "../Circle";
 import Heading from "../Heading";
 import "./galery.css";

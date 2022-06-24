@@ -1,3 +1,4 @@
+import React from "react";
 export default function Heading({ title, text }) {
   return (
     <div className="heading">

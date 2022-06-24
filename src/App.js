@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import Event from "./Components/event/Event";
 import Galery from "./Components/galery/Galery";
@@ -9,8 +10,9 @@ import Aos from "aos";
 import Navbar from "./Components/navbar/Navbar";
 import Greating from "./Components/greating/Greating";
 
+import AudioPlayer from "./Components/AudioPlayer";
 function App() {
-  useEffect(function () {
+  useEffect(function() {
     Aos.init({
       duration: 1000,
       easing: "ease-in-out",
@@ -20,6 +22,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <AudioPlayer />
       <Header />
       <Event />
       <Location />

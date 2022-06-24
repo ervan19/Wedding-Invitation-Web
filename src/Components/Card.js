@@ -1,3 +1,4 @@
+import React from "react";
 export default function Card({ svg, title, desc }) {
   return (
     <div className="cardContainer">

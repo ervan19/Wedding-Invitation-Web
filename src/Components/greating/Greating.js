@@ -1,3 +1,4 @@
+import React from "react";
 import "./greating.css";
 
 export default function Greating() {
