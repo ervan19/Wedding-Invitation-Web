@@ -13,18 +13,24 @@
 }
 
 .card {
-  width: 200px;
+  width: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 20px;
   border-radius: 50px;
-  padding: 40px 4px;
+  padding: 20px 4px;
   background: linear-gradient(-45deg, #496053, #759a85);
   color: white;
   text-align: center;
   box-shadow: 0px 12px 20px rgba(73, 96, 83, 0.3);
+}
+@media (min-width: 768px) {
+  .card {
+    width: 200px;
+    padding: 40px 4px;
+  }
 }
 .card h4 {
   font-size: 24px;

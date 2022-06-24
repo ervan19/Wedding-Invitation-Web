@@ -14,7 +14,8 @@
   text-align: center;
 }
 .hope h3 {
-  font-size: 30px;
+  font-family: pacifico;
+  font-size: 24px;
   letter-spacing: 1px;
 }
 .hope p {
@@ -22,8 +23,11 @@
 }
 
 @media (min-width: 768px) {
+  .hope h3 {
+    font-size: 28px;
+  }
   .text {
-    width: 40%;
+    width: 60%;
     padding: 50px 100px;
     border-radius: 50px;
   }

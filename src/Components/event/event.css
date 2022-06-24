@@ -20,7 +20,7 @@
   width: 30px;
 }
 .place {
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   font-weight: 600;
 }
@@ -50,6 +50,9 @@ h1 {
   }
   .event {
     flex-direction: row;
+  }
+  .place {
+    font-size: 18px;
   }
   .reseption {
     margin-top: 0;
