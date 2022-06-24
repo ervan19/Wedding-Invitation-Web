@@ -8,6 +8,7 @@ export default function AudioPlayer() {
         <ReactAudioPlayer
           src={process.env.PUBLIC_URL + "song.mp3"}
           autoPlay
+          loop
           preLoad="metadata"
           className="audio"
         />
@@ -15,6 +16,7 @@ export default function AudioPlayer() {
         <ReactAudioPlayer
           src={process.env.PUBLIC_URL + "song.mp3"}
           muted
+          loop
           preLoad="metadata"
           className="audio"
         />
