@@ -4,28 +4,20 @@ export default function AudioPlayer() {
   return (
     <div className="audioContainer" onClick={() => setPlay(!play)}>
       {play ? (
-        <audio
-          src={process.env.PUBLIC_URL + "song.mp3"}
-          autoPlay
-          loop
-          preload="auto"
-          className="audio"
-        />
+        <audio controls autoPlay="autoplay" loop className="audio">
+          <source src={process.env.PUBLIC_URL + "song.mp3"} type="audio/mpeg" />
+        </audio>
       ) : (
-        <audio
-          src={process.env.PUBLIC_URL + "song.mp3"}
-          muted
-          loop
-          preLoad="auto"
-          className="audio"
-        />
+        <audio controls muted loop className="audio">
+          <source src={process.env.PUBLIC_URL + "song.mp3"} type="audio/mpeg" />
+        </audio>
       )}
       <div className="musicPlayer">
         <img
           src={
             play
-              ? process.env.PUBLIC_URL + `pause.svg`
-              : process.env.PUBLIC_URL + `sound.svg`
+              ? process.env.PUBLIC_URL + `sound.svg`
+              : process.env.PUBLIC_URL + `pause.svg`
           }
           alt=""
         />
